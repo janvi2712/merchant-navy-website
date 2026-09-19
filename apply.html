@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply Now | Merchant Navy</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  background: #f5f7fa;
+}
+
+header {
+  background: linear-gradient(135deg, #08162f, #0a2a5e);
+  padding: 20px;
+  color: #ffb703;
+  text-align: center;
+}
+
+form {
+  background: white;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+h2 {
+  text-align: center;
+  color: #0a1f44;
+  margin-bottom: 25px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #ffb703;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e6a700;
+}
+
+.back-btn {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #0a1f44;
+  font-weight: 600;
+  text-decoration: none;
+}
+.floating-back {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #0a1f44;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>⚓ Apply for Merchant Navy</h1>
+</header>
+
+<form action="https://formspree.io/f/xjggbyez" method="POST">
+  <h2>Application Form</h2>
+  <a href="index.html" class="floating-back">← Home</a>
+
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="email" name="email" placeholder="Email Address" required>
+  <input type="tel" name="phone" placeholder="Mobile Number" required>
+  <select name="course" required>
+    <option value="">Select Course</option>
+    <option>Deck Department</option>
+    <option>Engine Department</option>
+    <option>Catering Department</option>
+  </select>
+  <select name="qualification" required>
+    <option value="">Highest Qualification</option>
+    <option>10th Pass</option>
+    <option>12th Pass</option>
+    <option>Diploma</option>
+    <option>Graduate</option>
+  </select>
+  <textarea name="message" rows="4" placeholder="Message / Questions (Optional)"></textarea>
+
+  <!-- REQUIRED HIDDEN FIELDS -->
+  <input type="hidden" name="_subject" value="New Merchant Navy Application">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="thankyou.html">
+  <input type="hidden" name="_replyto" value="email">
+  <input type="hidden" name="_autoresponse" value="Thank you for applying! We will contact you soon.">
+
+  <button type="submit">Submit Application</button>
+</form>
+
+</body>
+</html>
